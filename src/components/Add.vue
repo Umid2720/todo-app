@@ -56,7 +56,7 @@ const add = () => {
 
 <template>
     <div class="mb-20 my-10">
-        <div class="flex items-center justify-between gap-x-5">
+        <div class="flex md:flex-row flex-col md:items-center justify-between gap-5">
             <div class="flex-1">
                 <label for="inp" class="flex items-center gap-x-5 border p-3 rounded-lg">
                     <button class="cursor-pointer">
@@ -67,14 +67,13 @@ const add = () => {
                 </label>
             </div>
             <button @click="add()"
-                class="flex justify-center items-center w-96 p-3 text-xl cursor-pointer bg-[#1890ff]	rounded-lg text-white">
+                class="flex justify-center items-center md:w-60 lg:w-96 p-3 text-xl cursor-pointer bg-[#1890ff]	rounded-lg text-white">
                 <PlusIcon class="w-8 h-8 mr-3" />
                 Add
             </button>
         </div>
         <p class="text-rose-500 absolute -top-10 right-20 duration-500" :class="{ 'top-20': alert }">Iltimos
             maydonni to'ldiring</p>
-
         <div class="p-10 border relative rounded-lg mt-10">
             <h2 class="text-3xl font-bold pb-20">Todo List</h2>
             <div class="absolute h-0.5 bg-gray-300 bottom-0 left-0 right-0 top-24"></div>

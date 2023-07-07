@@ -3,7 +3,7 @@ import Add from './components/Add.vue'
 </script>
 
 <template>
-  <div class="p-20">
+  <div class="md:p-20 p-5">
     <Add />
   </div>
 </template>
